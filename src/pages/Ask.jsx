@@ -22,7 +22,7 @@ function Ask() {
       setError("All fields are required");
     }
     try {
-      await axios.post("/questions/askquestion", {
+      await axios.post("/api/questions/askquestion", {
         title: titleValue,
         description: descriptionValue,
         userid: user.userid,

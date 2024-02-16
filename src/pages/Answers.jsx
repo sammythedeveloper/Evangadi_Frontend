@@ -61,7 +61,7 @@ function Answers(){
   useEffect(() => {
     async function fetchAnswers() {
       try {
-        const response = await axios.get(`/answers/answe/${questionid}`);
+        const response = await axios.get(`/api/answers/answe/${questionid}`);
         console.log(response.data); // Log the response
         setAnswers(response.data);
       } catch (error) {

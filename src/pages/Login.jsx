@@ -26,7 +26,7 @@ function Login() {
     }
 
     try {
-      const { data } = await axios.post("/users/login", {
+      const { data } = await axios.post("/api/users/login", {
         email: emailValue,
         password: passValue,
       });

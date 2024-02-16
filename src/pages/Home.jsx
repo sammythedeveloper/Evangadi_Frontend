@@ -18,7 +18,7 @@ function Home() {
   }, []);
   async function fetchQuestions() {
     try {
-      const response = await axios.get("/questions/allquestions");
+      const response = await axios.get("/api/questions/allquestions");
       setQuestion(response.data.sort((a, b) => b.id - a.id));
  
     } catch (error) {

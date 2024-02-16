@@ -1,6 +1,5 @@
 import axios from 'axios';
 const axiosBase = axios.create({
-    // baseURL:'https://evangadi-forum-backend-x8xv.onrender.com'
-    baseURL:'http://localhost:3500/api'
+    baseURL: "https://evangadi-forum-backend-5tlx.onrender.com"
 })
 export default axiosBase

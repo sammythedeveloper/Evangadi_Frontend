@@ -86,6 +86,9 @@ function Register() {
             </Link>
           </p>
           <form onSubmit={handleSubmit}>
+                  {errorMessage && (
+        <div className="bg-red-200 text-red-700 p-2 mb-4">{errorMessage}</div>
+      )}
                 <input
                   className="border border-slate-300 sm:w-[150px]  md:w-[270px] lg:w-[300px] xl:w-[300px] h-[40px] mt-3 rounded "
                   ref={userNameDom}
@@ -116,13 +119,14 @@ function Register() {
                 type="password"
                 placeholder="Password"
               />
-          </form>
-          <button
-            className="bg-blue-600 sm:w-[150px]  md:w-[270px] lg:w-[300px] xl:w-[300px] h-[40px] text-center rounded mt-3 text-white hover:bg-orange-500  "
+                   <button
+            className="bg-blue-600 sm:w-[150px]  md:w-[270px] lg:w-[300px] xl:w-[300px] h-[40px] text-center rounded mt-20 text-white hover:bg-orange-500  "
            type="submit"
           >
             Agree and Join
           </button>
+          </form>
+   
 
           <Link to="/login">
             <p className="text-xs text-orange-500 hover:underline mt-10 ">
